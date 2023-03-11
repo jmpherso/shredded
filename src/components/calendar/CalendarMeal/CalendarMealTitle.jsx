@@ -6,9 +6,7 @@ import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import Grid from "@mui/material/Grid";
-
 import Meals from "../../modal/meals/Meals.jsx";
-
 
 function MealTitle({
   date,

@@ -35,7 +35,6 @@ function MealTableHead({ foodSelection, setFoodSelection }) {
   const handleChange = (event) => {
     setFoodSelection(event.target.value);
   };
-
   return (
     <TableHead>
       <TableRow>
