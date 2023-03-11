@@ -15,9 +15,7 @@ import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import EditIcon from "@mui/icons-material/Edit";
 import ClearIcon from "@mui/icons-material/Clear";
-
 import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 
 import EditExerciseModal from "../../modal/workout/EditExerciseModal";
 

@@ -8,7 +8,6 @@ import RefreshIcon from "@mui/icons-material/Refresh";
 import Grid from "@mui/material/Grid";
 import Meals from "../../modal/meals/Meals.jsx";
 
-
 function MealTitle({
   date,
   userID,

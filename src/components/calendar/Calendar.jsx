@@ -72,7 +72,7 @@ function CalendarPage({ currentDay, setCurrentDay, currDateInt, userID }) {
       getCalories(parsedDate, userID);
     }
   }
-
+  //render calender upon changing the viewing month
   useEffect(() => {
     renderCalender();
   }, [calorieMonth]);

@@ -29,7 +29,6 @@ function CalendarWorkoutList({
         console.log("Error editting current workout");
       });
   };
-
   const handleDelete = (exerciseId) => {
     axios
       .delete("http://localhost:3000/delete", {

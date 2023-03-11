@@ -48,7 +48,6 @@ function CalendarWorkout({ currDateInt, userID }) {
   const totalCalsBurned = exercises.reduce((acc, exercise) => {
     return (acc += exercise.calories_burned);
   }, 0);
-
   // Grab today's workout (A list of exercises)
   useEffect(() => {
     axios
