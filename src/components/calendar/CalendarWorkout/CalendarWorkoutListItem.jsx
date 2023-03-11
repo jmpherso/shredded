@@ -1,22 +1,25 @@
 import React, { useState } from "react";
-import {
-  ListItemText,
-  ListItemButton,
-  ListItemSecondaryAction,
-  ListItemAvatar,
-  Avatar,
-  Divider,
-  Button,
-  Popover,
-  Box,
-  Typography,
-  Fab,
-} from "@mui/material";
+
+import ListItemText from "@mui/material/ListItemText";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemSecondaryAction from "@mui/material/ListItemSecondaryAction";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import Avatar from "@mui/material/Avatar";
+import Divider from "@mui/material/Divider";
+import Button from "@mui/material/Button";
+import Popover from "@mui/material/Popover";
+
+// Icons
+import Fab from "@mui/material/Fab";
 import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import EditIcon from "@mui/icons-material/Edit";
 import ClearIcon from "@mui/icons-material/Clear";
-import EditExerciseModal from "../modal/workout/EditExerciseModal";
+
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+
+import EditExerciseModal from "../../modal/workout/EditExerciseModal";
 
 function CalendarWorkoutListItem({
   handleEditInfo,
@@ -27,12 +30,13 @@ function CalendarWorkoutListItem({
   const [showMore, setShowMore] = useState(false);
   const [showEdit, setShowEdit] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null); // Anchor for edit button popover
+
+  // Handles open state for edit popover
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
 
   const exerciseName = exercise.name;
   const exerciseId = exercise.exercise_id;
-
   const { instructions, type, intensity, duration, weight, sets, reps } =
     exercise;
 
@@ -56,11 +60,12 @@ function CalendarWorkoutListItem({
     );
   }
 
+  // Toggles popover
   const handleEditClick = (e) => {
     e.stopPropagation();
     setAnchorEl(e.currentTarget);
   };
-
+  // Handles when we click out of edit
   const handleClose = () => {
     setAnchorEl(null);
   };

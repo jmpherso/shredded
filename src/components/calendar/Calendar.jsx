@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Calendar from "react-calendar";
-import { TextField, Button, Box, Paper } from "@mui/material";
-import { BiPencil } from "react-icons/bi";
-import { AiFillDelete } from "react-icons/ai";
-import Quote from "../dashboard/Quote";
-import DayWorkoutList from "../modal/workout/DayWorkoutList";
-import CalendarWorkout from "./CalendarWorkout";
-import CalendarFood from "./CalendarFood";
-import MealModalTest from "./ctest.jsx";
-import Form from "../modal/meals/Form";
+import Paper from "@mui/material/Paper";
+import CalendarWorkout from "./CalendarWorkout/CalendarWorkout";
+import MealModalTest from "./CalendarMeal/CalendarMeal.jsx";
 import "../../css/calendar.css";
 
-import DatePickerComponent from "../dashboard/DatePickerComponent.jsx";
 const monthNames = [
   "January",
   "February",
@@ -31,16 +24,7 @@ const monthNames = [
 function CalendarPage({ currentDay, setCurrentDay, currDateInt, userID }) {
   const [calorieMonth, setCalorieMonth] = useState("March2023");
   const [calorieDates, setCalorieDates] = useState([]);
-  const [daliyMealPlan, setDaliyMealPlan] = useState([
-    "apple",
-    "banana",
-    "orange",
-  ]);
-  const [daliyWorkoutPlan, setDaliyWorkoutPlan] = useState([
-    "Biceps",
-    "Chest",
-    "Glutes",
-  ]);
+
   function renderCalender() {
     async function getCalories(parsedDate, userID) {
       await axios
@@ -117,7 +101,6 @@ function CalendarPage({ currentDay, setCurrentDay, currDateInt, userID }) {
       calorieDiv.setAttribute("id", date);
       calorieDiv.classList.add("calorieCount");
       dateButton.appendChild(calorieDiv);
-
       trainIconDiv.classList.add("trainIcon");
       trainIconDiv.innerText = "🍎";
       dateButton.appendChild(trainIconDiv);
@@ -130,11 +113,6 @@ function CalendarPage({ currentDay, setCurrentDay, currDateInt, userID }) {
     setCalorieMonth(curMonth + date.getFullYear());
   }
 
-  function deleteEntry(plan, setPlan, item) {
-    const newList = [...plan];
-    newList.splice(item, 1);
-    setPlan(newList);
-  }
 
   return (
     <>
@@ -170,3 +148,4 @@ function CalendarPage({ currentDay, setCurrentDay, currDateInt, userID }) {
 }
 
 export default CalendarPage;
+
