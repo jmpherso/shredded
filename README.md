@@ -1,6 +1,4 @@
 # Blue Ocean: Shredded
-=======================================================================
-
 
 ## Contributors:
   Agnese Castellucci, Andrew Feng, Anthony Chen, Jerry MacPherson, Jesus Solorzano, Sonia Ramlall, Thomas Faddegon
