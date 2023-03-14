@@ -19,23 +19,28 @@
   
 ## Features
 ### User authentication:  
-  New users are required to create a user account with log-in details. Upon entering a username and password they will be prompted for further information about themselves that will aid in calculations required by the application. User sessions are stored in a PostgreSQL database to allow them to persist across different site visits.
+  New users are required to create a user account with log-in details. Upon entering a username and password they will be prompted for further information about themselves that will aid in calculations required by the application. User sessions are stored in a PostgreSQL database to allow them to persist across different site visits.  
+  
 ![login](https://user-images.githubusercontent.com/24445744/224448055-73784c3b-a3e9-4b69-9cf1-fea9efa23246.gif)
 
 ### Central Dashboard:
-  The user will be able to see their workouts and meals for the day. From this dashboard, they can also access the add workout or add meal modals.
+  The user will be able to see their workouts and meals for the day. From this dashboard, they can also access the add workout or add meal modals.  
+  
   ![navigate](https://user-images.githubusercontent.com/24445744/224450577-4adec2b5-f891-43a4-ab1e-9fd3e534b7e7.gif)
 ### Workout & Meal Modal:
-  The user will be able to see their workouts and meals for the day. From this dashboard, they can also access the add workout or add meal modals.
+  The user will be able to see their workouts and meals for the day. From this dashboard, they can also access the add workout or add meal modals.  
+  
   ![workoutmodal](https://user-images.githubusercontent.com/24445744/224450930-b2d5205f-c5fe-48a4-bfdc-9a66fa187f5f.gif)
 ### Calendar:
-  The user can access a full-page calendar with each date square showing previews of the workouts and meals for the day. The right half of the screen will have a summary section showing the meals and workouts for the selected day, and clicking on any day in the calendar will display the meals and workouts for that day.
+  The user can access a full-page calendar with each date square showing previews of the workouts and meals for the day. The right half of the screen will have a summary section showing the meals and workouts for the selected day, and clicking on any day in the calendar will display the meals and workouts for that day.  
+  
   ![calendar](https://user-images.githubusercontent.com/24445744/224450757-25e0876a-9c1f-4894-9166-f508a5cde9bf.gif)
 ### Nav Bar: 
   The nav bar will be visible on both the dashboard and the calendar pages, and will have options to add a meal, add a workout, go to the calendar, or go back to the dashboard. 
 
 ### Profile Page: 
-  The profile page will track personal records and allow the user to see/edit their current information. Personal records will be displayed for every workout. If the user is an admin they can also access admin message posting, and app metrics.
+  The profile page will track personal records and allow the user to see/edit their current information. Personal records will be displayed for every workout. If the user is an admin they can also access admin message posting, and app metrics.  
+  
 ![profileedit](https://user-images.githubusercontent.com/24445744/224449313-e546c28c-bae8-4554-9e62-ad358230dc80.gif)
 
 ---------- Gifs/pictures to be moved around --------
